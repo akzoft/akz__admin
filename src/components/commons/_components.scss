@@ -1,0 +1,87 @@
+//cards
+.card {
+  margin-bottom: 1.875rem;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  border: 0rem solid transparent;
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+
+//datatable
+.hNXIhM:not(:last-of-type) {
+  border-bottom-style: hidden !important;
+}
+
+//custom page
+
+.page {
+  overflow: hidden;
+  .page-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.25rem;
+    transition: width 1s ease-in-out;
+
+    .page_header_items {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      width: 1rem;
+      overflow: hidden;
+      transition: all 0.6s ease;
+
+      &.active {
+        width: 7rem;
+        transition: all 0.6s ease;
+      }
+
+      i {
+        cursor: pointer;
+        transition: all 0.6s ease;
+
+        &.transition {
+          transition: all 3s ease;
+        }
+
+        &.ti-reload {
+          &.active {
+            animation: rotateFiveTimes 2s linear forwards;
+          }
+        }
+      }
+    }
+  }
+  .page-body {
+    padding: 1.25rem;
+    padding-top: 0;
+  }
+}
+
+@keyframes rotateFiveTimes {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(1080deg);
+  }
+}
+
+//filter input
+.filter-input {
+  padding: 0.23rem;
+  border-radius: 0.2rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+//page header btn
+.header-button {
+  padding: 0.23rem 2rem;
+  background: $button;
+  outline: none;
+  border-radius: 0.2rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
